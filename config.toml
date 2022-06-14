@@ -1,6 +1,7 @@
 baseURL = 'https://yfxu.github.io/osu-uwaterloo-site-hugo/'
 languageCode = 'en-us'
 title = 'osu!uwaterloo'
+canonifyURLs = true
 
 [[params.executives]]
   alias   = "Devil_Oid"
