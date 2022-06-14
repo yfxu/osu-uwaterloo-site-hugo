@@ -21,7 +21,7 @@ $color-accent: $gold;
 body {
   margin: 0;
   // background-color: $gold;
-  background-image: url("/e5-stairs-triangles.png");
+  background-image: var(--bg-url);
   background-attachment: fixed;
   background-repeat: no-repeat;
   color: $color-primary-font;
