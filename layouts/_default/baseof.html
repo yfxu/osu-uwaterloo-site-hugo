@@ -2,7 +2,7 @@
 <html>
 {{- partial "head.html" . -}}
 
-<body style="--bg-url: url('{{ "e5-stairs-triangles.png" | absURL }}')">
+<body style="--bg-url: url('{{ .Site.BaseURL }}/e5-stairs-triangles.png')">
   {{ if ne .IsHome true }}
     <div class="container">
       {{- partial "header.html" . -}}

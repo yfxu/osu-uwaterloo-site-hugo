@@ -6,7 +6,7 @@
     <div class="flex-column events-list">
       {{- range .Pages -}}
       <div class="event flex-row">
-        <a href="{{ .Permalink }}" class="thumbnail" style="--bg-url: url('{{ .Params.Banner | absURL }}')"></a>
+        <a href="{{ .Permalink }}" class="thumbnail" style="--bg-url: url({{ .Site.BaseURL }}{{ .Params.Banner }})"></a>
         <div class="flex-column">
           <a href="{{ .Permalink }}" class="event-title">{{ .Title }}</a>
           <span>{{ .Description }}</span>
