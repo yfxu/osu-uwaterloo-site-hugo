@@ -1,4 +1,4 @@
-baseURL = 'osu-uwaterloo-site-hugo/'
+baseURL = '/osu-uwaterloo-site-hugo'
 languageCode = 'en-us'
 title = 'osu!uwaterloo'
 
