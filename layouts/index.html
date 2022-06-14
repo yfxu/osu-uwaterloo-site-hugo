@@ -1,0 +1,23 @@
+{{ define "main" }}
+<div class="home">
+  <div class="menu-container">
+    <div id="menu-buttons" class="flex-column">
+      <a class="menu-button" href="/about">
+        <img src="menu-button-1.png">
+      </a>
+      <a class="menu-button" href="/members">
+        <img src="menu-button-2.png">
+      </a>
+      <a class="menu-button" href="/events">
+        <img src="menu-button-3.png">
+      </a>
+      <a class="menu-button" href="/join">
+        <img src="menu-button-4.png">
+      </a>
+    </div>
+    <div class="logo-container">
+      <img src="logo.png" onclick="toggleMenu()">
+    </div>
+  </div>
+</div>
+{{ end }}

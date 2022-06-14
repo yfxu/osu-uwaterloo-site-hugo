@@ -1,0 +1,19 @@
+{{ define "main" }}
+<div class="content">
+  <div class="card">
+    <h1 class="title">{{ .Title }}</h1>
+    {{ .Content }}
+    <div class="flex-column events-list">
+      {{- range .Pages -}}
+      <div class="event flex-row">
+        <a href="{{ .Permalink }}" class="thumbnail" style="--bg-url: url({{ .Params.Banner }})"></a>
+        <div class="flex-column">
+          <a href="{{ .Permalink }}" class="event-title">{{ .Title }}</a>
+          <span>{{ .Description }}</span>
+        </div>
+      </div>
+      {{- end -}}
+    </div>
+  </div>
+</div>
+{{ end }}

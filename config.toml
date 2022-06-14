@@ -1,0 +1,66 @@
+baseURL = ''
+languageCode = 'en-us'
+title = 'osu!uwaterloo'
+
+[[params.executives]]
+  alias   = "Devil_Oid"
+  osuId   = 3805080
+  discord = "Devil_Oid#0843"
+  role    = "President"
+  blurb   = "Honours Math student who is essentially retired from osu!Standard. Mainly plays Catch the Beat, taking on maps way out of his skill range .\"just cause.\". Will occasionally make a random pp play."
+  program = "4A Math"
+[[params.executives]]
+  alias   = "Piggy"
+  osuId   = 5390121
+  discord = "Piggy#2119"
+  role    = "Vice President"
+  blurb   = "4th year CE student, mania player, occasionally dabbles in standard and taiko but sucks at all modes."
+  program = "4A ECE"
+[[params.executives]]
+  alias   = "LumenLogic"
+  osuId   = 8171404
+  discord = "LumenLogic#5533"
+  role    = "Tournament Host"
+  blurb   = "Math/CPA Student with lost of osu community experience. Hosts Osu Collegiate League and an admin of the Canadian 5 digit community. Reaction time (High AR) is genetics"
+  program = "4A MATH/CPA"
+[[params.executives]]
+  alias   = "ThePersonWhoDie"
+  osuId   = 15977117
+  discord = "thepersonwhodied#8285"
+  role    = "Contest Host"
+  blurb   = "3rd year biochem student who likes puzzle games. Plays osu standard and only knows how to combo game."
+  program = "3A Biochem"
+[[params.executives]]
+  alias   = "Redside"
+  osuId   = 16039046
+  discord = "Redside#1337"
+  role    = "Treasurer"
+  blurb   = "4th year ECE student with nothing better to do also osu FA btw :yep:"
+  program = "4A ECE"
+
+[[params.members]]
+  alias   = "Feiri"
+  name    = "Yifei Xu"
+  program = "4A ECE"
+  osuId   = 3214844
+  discord = "Feiri#1221"
+  blurb   = "Resident tech map enjoyer and mapper. Used to be literally the best gamer in the world but has now retired to the editor."
+[[params.members]]
+  alias   = "jerwyk"
+  program = "redacted"
+  osuId   = 5135440
+  discord = "jerwyk#3314"
+  blurb   = "keeps putting touhou art on my tl. He also did quite a bit of heavy lifting in my group's ECE 350 lab projects. Please bless him."
+[[params.members]]
+  alias   = "Zer0-G"
+  program = "redacted"
+  osuId   = 12577911
+  discord = "Zer0-G#7501"
+  blurb   = "mapper of popular osu beatmap SISTER FRIEND LOVER who also flies planes and has told me that he has nearly died on two separate occasions while piloting aircrafts."
+
+[[params.alumni]]
+  alias   = "lightlance7"
+  program = "redacted"
+  osuId   = 2103833
+  discord = "ArcCosine#6168"
+  blurb   = "this dude is cracked on god"

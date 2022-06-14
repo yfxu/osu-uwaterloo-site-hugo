@@ -1,0 +1,15 @@
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="osu!uwaterloo club website">
+  <meta name="author" content="Feiri">
+  <meta name="keywords" content="club osu rhythm game university uwaterloo">
+  {{ $sass := resources.Get "/sass/main.scss" }}
+  {{ $style := $sass | resources.ToCSS | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $style.RelPermalink }}" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+  <script src="/scripts/menu.js"></script>  
+  {{ $title := print .Site.Title " | " .Title }}
+  {{ if .IsHome }}{{ $title = .Site.Title }}{{ end }}
+  <title>{{ $title }}</title>
+</head>

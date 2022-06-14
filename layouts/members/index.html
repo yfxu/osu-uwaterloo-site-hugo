@@ -1,0 +1,96 @@
+{{ define "main" }}
+<div class="content">
+  <div class="card">
+    <h1 class="title">{{ .Title }}</h1>
+    <p>{{ .Content }}</p>
+    <h2>Executives</h2>
+    <div class="flex-column execs-list" style="gap: 2rem;">
+      {{ with .Site.Params.executives }}
+        {{- range $i, $e := . -}}
+          <div class="member-exec">
+            <img src="https://a.ppy.sh/{{ .osuId }}">
+            <div class="member-exec-info">
+              <span class="exec-name">{{ .alias }}</span>
+              <span class="role">{{ .role }}</span>
+              <span class="blurb">
+                {{ .blurb }}
+              </span>
+              <div class="user-links">
+                <span>
+                  {{ partial "svg" "osu" }}
+                  <a href="https://osu.ppy.sh/users/{{ .osuId }}">{{ .osuId }}</a>
+                </span>
+                <span>
+                  {{ partial "svg" "discord" }}
+                  {{ .discord }}
+                </span>
+              </div>
+            </div>
+          </div>
+        {{- end -}}
+      {{ end }}
+    </div>
+    <h2>Active Members</h2>
+    <div class="flex-column members-list">
+      {{ with .Site.Params.members }}
+        {{- range $i, $e := . -}}
+          <div class="member">
+            <img src="https://a.ppy.sh/{{ .osuId }}">
+            <div class="flex-column member-info">
+              <span>
+                <span class="alias">{{ .alias }}</span>
+                {{ if isset . "name" }}
+                  <span class="name">({{ .name }})</span>
+                {{ end }}
+              </span>
+              <span class="program">{{ .program }}</span>
+              <span class="blurb">{{ .blurb }}</span>
+              <div class="user-links flex-row">
+                <span>
+                  {{ partial "svg" "osu" }}
+                  <a href="https://osu.ppy.sh/users/{{ .osuId }}">{{ .osuId }}</a>
+                </span>
+                <span>
+                  {{ partial "svg" "discord" }}
+                  {{ .discord }}
+                </span>
+              </div>
+            </div>
+          </div>
+        {{- end -}}
+      {{ end }}
+    </div>
+    <h2>Alumni</h2>
+    <div class="flex-column members-list">
+      {{ with .Site.Params.alumni }}
+        {{- range $i, $e := . -}}
+          <div class="member">
+            <img src="https://a.ppy.sh/{{ .osuId }}">
+            <div class="flex-column member-info">
+              <span class="alias">{{ .alias }}</span>
+              <span class="program">{{ .program }}</span>
+              <span class="blurb">{{ .blurb }}</span>
+              <div class="user-links flex-row">
+                <span>
+                  {{ partial "svg" "osu" }}
+                  <a href="https://osu.ppy.sh/users/{{ .osuId }}">{{ .osuId }}</a>
+                </span>
+                <span>
+                  {{ partial "svg" "discord" }}
+                  {{ .discord }}
+                </span>
+              </div>
+            </div>
+          </div>
+        {{- end -}}
+      {{ end }}
+    </div>
+  </div>
+</div>
+{{ "<!-- List of Honourary Members -->" | safeHTML }}
+{{ "<!-- (non-UW students who have left a significant impact on the osu!UWaterloo community) -->" | safeHTML }}
+{{ "<!-- osusexual -->" | safeHTML }}
+{{ "<!-- IOException -->" | safeHTML }}
+{{ "<!-- daw9801 -->" | safeHTML }}
+{{ "<!-- Akamatsu -->" | safeHTML }}
+{{ end }}
